@@ -1,0 +1,97 @@
+{% extends "partials/_base.html" %}
+
+{% block title %}Services{% endblock title %}
+{% block style %}
+.card{
+    transition: 0.3s;
+    overflow: hidden;
+}
+.card:hover {
+    scale: 1.02;
+    box-shadow:darkgrey 0px 0px 15px ;
+}
+{% endblock style %}
+{% block servicesActive %}
+    active
+{% endblock servicesActive %}
+
+{% block body %}
+<h1 class="text-center my-3">Our services</h1>
+<div class="container mt-3">
+    {% comment %} <h1 class="text-center"> Select from our range of ice creams</h1> {% endcomment %}
+    <div class="row">
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1200?random=4" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1200?random=5" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1200?random=6" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1200?random=4" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1200?random=5" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1200?random=6" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1100?random=4" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1100?random=5" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-md-4 m-3 mx-auto" style="max-width: 18rem;">
+            <img src="https://picsum.photos/1600/1100?random=6" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick to build on the card the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

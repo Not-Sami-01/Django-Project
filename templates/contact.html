@@ -1,0 +1,43 @@
+{% extends "partials/_base.html" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block contactActive %}active{% endblock contactActive %}
+{% block body %}
+
+<div class="">
+    <img src="https://picsum.photos/2400/700?random=3" class="img-fluid" alt="Contact Image">
+</div>
+<div class="container mt-3 bg-dark text-light rounded p-4 my-4">
+    <h1 class="text-center" style="text-decoration:none;">Please fill the contact form</h1>
+    <form method="post" action="/contact/">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputEmail1"  class="form-label">Email address or Phone Number</label>
+          <input type="text" name="email_or_phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-light">We'll never share your email or phone number with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">First Name</label>
+          <input type="text" class="form-control" name="firstName"  id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Last Name</label>
+          <input type="text" name="lastName" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="floatingTextarea2">Tell us what you want to contact us for:</label>
+            <textarea class="form-control" name="context" placeholder="" id="floatingTextarea2" style=""></textarea>
+          </div>
+          
+          {% if request.session.username is None %}
+            
+          <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Submit</button>
+          {% else %}
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+          {% endif %}
+            
+      </form>
+</div>
+{% endblock body %}
